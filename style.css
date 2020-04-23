@@ -57,6 +57,11 @@ body{
   height: 200px;
   margin: 25px auto;
 }
+@media(max-width:999px){
+  .logo img{
+    heught: 80px;
+  }
+}
 /* 開閉式リスト */
 #nav{
   display: none;
@@ -268,6 +273,7 @@ footer .copy{
   }
   .slider img{
     text-align: center;
+    padding: 0;
     margin: 0 10vw;
     width: 80vw;
   }
