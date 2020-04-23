@@ -27,7 +27,7 @@ body{
   z-index: 9999;
   width: 75vw;
 }
-@media (min-width:1500px) {
+@media screen and (min-width:1500px) {
   .start img{
     width:75vh;
   }
@@ -79,7 +79,7 @@ body{
   border-bottom: 1px solid #fff;
   font-size: 10px;
 }
-@media (min-width:1000px) {
+@media screen and (min-width:1000px) {
   #nav{
     width: 30%;
   }
@@ -237,7 +237,7 @@ footer .copy{
   display: block;
   background-color: rgba(0,0,0,0.2);
 }
-@media (max-width:1499px) {
+@media screen and (max-width:1499px) {
   .slider img{
     width: 80vw;
   }
@@ -273,7 +273,7 @@ footer .copy{
   width: 50%;
   height: 50%;
 }
-@media (max-width:999px) {
+@media screen and (max-width:999px) {
   .concept .photo{
     flex-wrap: wrap;
   }
@@ -368,7 +368,7 @@ footer .copy{
   font-size: 30px;
   padding-left: 20px;
 }
-@media (max-width:899px) {
+@media screen and (max-width:899px) {
   .price,.bottle-menu,
   .shot-menu,.champagne-menu{
     padding: 0;
@@ -449,14 +449,14 @@ footer .copy{
   border: 2px solid rgb(0,52,165);
   flex: 1;
 }
-@media(max-width:1499px) {
+@media screen and (max-width:1499px) {
   .calendar table{
     width: 700px;
     margin: 20px auto;
     font-size: 15px;
   }
 }
-@media (max-width:699px) {
+@media screen and (max-width:699px) {
   .calendar table{
     width: 500px;
     margin: 20px auto;
@@ -497,7 +497,7 @@ footer .copy{
 .access iframe{
   width: 950px;
 }
-@media(max-width:999px) {
+@media screen and (max-width:999px) {
   .access table{
     width: 500px;
     margin: 20px auto;
@@ -524,7 +524,7 @@ footer .copy{
 .sns .contents{
   margin: 20px 30%;
 }
-@media (max-width:999px) {
+@media screen and (max-width:999px) {
   .sns .contents{
     margin: 15px 10%;
   }
