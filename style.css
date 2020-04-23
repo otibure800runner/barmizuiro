@@ -80,10 +80,10 @@ body{
 }
 @media (min-width:1000px) {
   #nav{
-    width: 25%;
+    width: 30%;
   }
   #nav li{
-    font-size: 6vh;
+    font-size: 30px;
   }
 }
 #nav a{
