@@ -1,0 +1,553 @@
+/* 全体 */
+body{
+  position: relative;
+  padding: 0;
+  margin: 0;
+  font-family: font-family: 'メイリオ', Meiryo,'游明朝体+36ポかな','YuMincho +36p Kana','ヒラギノ明朝 ProN','Hiragino Mincho ProN',serif;;
+}
+/* 全体ここまで */
+
+/* 読み込み後のロゴフェード */
+.start{
+  background: rgb(206,242,255);
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 9000;
+}
+.start img{
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  display: none;
+  z-index: 9999;
+  width: 75vw;
+}
+@media (min-width:1500px) {
+  .start img{
+    width:75vh;
+  }
+}
+.start p:last-child{
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  display: none;
+  z-index: 9999;
+  font-size: 10vw;
+  color: rgb(0,52,165);
+}
+/* 読み込み後のロゴフェードここまで */
+
+/* ヘッダー */
+.header-bar{
+  position: relative;
+  background-color: rgb(206,242,255);
+}
+.logo{
+  height: 250px;
+  text-align: center;
+}
+.logo img{
+  height: 200px;
+  margin: 25px auto;
+}
+/* 開閉式リスト */
+#nav{
+  display: none;
+  margin: 0 auto;
+  width: 50%;
+  z-index: 100;
+  position: fixed;
+  right: 0;
+}
+#nav ul{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  background-color: rgb(0,52,165);
+  border: 3px solid #fff;
+  border-radius: 10px;
+}
+#nav li{
+  padding: 15px;
+  border-bottom: 1px solid #fff;
+  font-size: 10vw;
+}
+@media (min-width:1000px) {
+  #nav{
+    width: 25%;
+  }
+  #nav li{
+    font-size: 6vh;
+  }
+}
+#nav a{
+  text-decoration: none;
+  display: block;
+  color: #fff;
+}
+/* 開閉式リストここまで */
+
+/* ハンバーガーメニュー基礎 */
+#btn{
+  cursor: default;
+  position: fixed;
+  z-index: 1000;
+  top: 20px;
+  right: 20px;
+  border-radius: 8px;
+  padding: 20px;
+  background-color: #fff;
+  cursor: pointer;
+  box-shadow: #999 0 0 5px 5px;
+}
+.menu-trigger,
+.menu-trigger span {
+  display: inline-block;
+  transition: all .4s;
+  box-sizing: border-box;
+}
+.menu-trigger {
+  position: relative;
+  width: 5vw;
+  height: 5vw;
+}
+.menu-trigger span {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 1vw;
+  background-color: rgb(0,52,165);
+  border-radius: 35%;
+}
+.menu-trigger span:nth-of-type(1) {
+  top: 0;
+}
+.menu-trigger span:nth-of-type(2) {
+  top: 2vw;
+}
+.menu-trigger span:nth-of-type(3) {
+  bottom: 0;
+}
+@media (min-width:1500px) {
+  .menu-trigger{
+    width: 5vh;
+    height: 5vh;
+  }
+  .menu-trigger span{
+    height: 1vh;
+  }
+  .menu-trigger span:nth-of-type(2) {
+    top: 2vh;
+  }
+}
+/* ハンバーガーメニュー基礎ここまで */
+
+/* ハンバーガーメニュー動作 */
+.menu-trigger.active span:nth-of-type(1) {
+  -webkit-transform: translateY(2vw) rotate(-45deg);
+  transform: translateY(2vw) rotate(-45deg);
+}
+.menu-trigger.active span:nth-of-type(2) {
+  opacity: 0;
+}
+.menu-trigger.active span:nth-of-type(3) {
+  -webkit-transform: translateY(-2vw) rotate(45deg);
+  transform: translateY(-2vw) rotate(45deg);
+}
+@media (min-width:1500px){
+  .menu-trigger.active span:nth-of-type(1) {
+    -webkit-transform: translateY(2vh) rotate(-45deg);
+    transform: translateY(2vh) rotate(-45deg);
+  }
+  .menu-trigger.active span:nth-of-type(3) {
+    -webkit-transform: translateY(-2vh) rotate(45deg);
+    transform: translateY(-2vh) rotate(45deg);
+  }
+}
+/* ハンバーガーメニュー動作ここまで */
+/* ヘッダーここまで */
+
+/* フッター */
+footer{
+  height: 200px;
+  width: 100%;
+  background-color: rgb(0,52,165);
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+}
+footer .left{
+  flex: 1 1 auto;
+  display: flex;
+}
+footer .title{
+  font-size: 50px;
+  padding: 0;
+  margin: auto 20px;
+  flex: 0 0 auto;
+}
+footer .nav{
+  flex: 1;
+  padding: 0;
+  margin: auto 0;
+}
+footer li{
+  list-style: none;
+  display: block;
+  font-size: 20px;
+  line-height: 2em;
+}
+footer a{
+  text-decoration: none;
+  color: inherit;
+}
+footer a:hover{
+  opacity: 0.8;
+}
+footer .right{
+  font-size: 20px;
+  line-height: 2em;
+  padding: 0;
+  margin: 70px 10px 0;
+  flex: 0 1 auto;
+}
+footer i{
+  font-size: 30px;
+}
+footer span{
+  font-size: 25px;
+}
+footer .copy{
+  font-size: 30px;
+}
+/* フッターここまで */
+
+/* index.html */
+.slider h1{
+  text-align: center;
+  font-size: 75px;
+  text-decoration: underline;
+  line-height: 2em;
+  color: rgb(0,52,165);
+}
+.bxslider{
+  position: relative;
+}
+.slider img{
+  text-align: center;
+  margin: 0 auto;
+  width: 50vw;
+}
+.slider p{
+  color: #fff;
+  font-size: 40px;
+  padding: 1em;
+  box-sizing: border-box;
+  text-align: right;
+  position: absolute;
+  bottom: 0;
+  right: 25vw;
+  margin: 0;
+  width: 50vw;
+  display: block;
+  background-color: rgba(0,0,0,0.2);
+}
+@media (max-width:1499px) {
+  .slider img{
+    width: 80vw;
+  }
+  .slider p{
+    width: 80vw;
+    right: 10vw;
+  }
+}
+.concept-bar{
+  width: 100%:auto;
+  height: 200px;
+  background-color: rgb(0,52,165);
+}
+.concept-bar h2{
+  font-size: 70px;
+  color: #fff;
+  text-align: center;
+  line-height: 200px;
+}
+.concept p{
+  font-size: 30px;
+  color: rgb(0,52,165);
+  text-align: center;
+}
+.concept .photo{
+  display: flex;
+}
+.concept img{
+  flex: 1;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 20px;
+  width: 50%;
+  height: 50%;
+}
+@media (max-width:999px) {
+  .concept .photo{
+    flex-wrap: wrap;
+  }
+  .concept img{
+    width: 75%;
+    height: 75%;
+    padding: auto;
+  }
+}
+/* index.htmlここまで */
+
+/* menu.html */
+.menu{
+  color: rgb(0,52,165);
+}
+.menu-bar{
+  width: 100%:auto;
+  height: 200px;
+  background-color: rgb(0,52,165);
+}
+.menu-bar h2{
+  font-size: 70px;
+  color: #fff;
+  text-align: center;
+  line-height: 200px;
+}
+.menu h3{
+  text-align: center;
+  font-size: 50px;
+}
+.set,.shot,.champagne{
+  display: flex;
+}
+.price,.bottle-menu,
+.shot-menu,.champagne-menu{
+  padding: 20px;
+  margin: 30px;
+  border: 5px solid rgb(0,52,165);
+  border-radius: 10px;
+  font-size: 30px;
+  line-height: 50px;
+  flex: 1;
+  text-align: center;
+  background-color: rgb(206,242,255);
+}
+.bottle-menu ul,.shot-menu ul,
+.champagne-menu ul{
+  list-style: none;
+}
+.bottle-menu li,.shot-menu li,
+.champagne-menu li{
+  display: flex;
+}
+.bottle-menu p,.shot-menu p,
+.champagne-menu p{
+  flex: 1;
+  flex-wrap: wrap;
+}
+.plus{
+  font-size: 50px;
+}
+.set .plus{
+  line-height: 380px;
+}
+.shot .plus{
+  line-height: 850px;
+}
+.champagne .plus{
+  line-height: 1100px;
+}
+.champagne .price h4{
+  padding-top: 50px;
+}
+.shot .price h4,.shot .price p{
+  margin: 150px 0;
+}
+.champagne .price h4,.champagne .price p{
+  margin: 200px 0;
+}
+.price h4{
+  font-size: 30px;
+}
+.price p:not(.text){
+  font-size: 50px;
+  display: inline-block;
+  border-bottom: 3px solid red;
+}
+.bottle-menu{
+  padding: 100px auto;
+}
+.coment p{
+  font-size: 30px;
+  padding-left: 20px;
+}
+@media (max-width:899px) {
+  .price,.bottle-menu,
+  .shot-menu,.champagne-menu{
+    padding: 0;
+    margin: 5px;
+    font-size: 10px;
+    line-height: 30px;
+  }
+  .price p:not(.text){
+    font-size: 35px;
+    display: inline-block;
+    border-bottom: 3px solid red;
+  }
+  .shot .price h4,.shot .price p{
+    margin: 80px 0;
+  }
+  .champagne .price h4,.champagne .price p{
+    margin: 120px 0;
+  }
+  .text{
+    font-size: 20px;
+  }
+  .set .bottle-menu{
+    padding-top: 30px;
+  }
+  .set .plus{
+    line-height: 180px;
+  }
+  .shot .plus{
+    line-height: 400px;
+  }
+  .champagne .plus{
+    line-height: 550px;
+  }
+  .champagne .price h4{
+    padding-top: 0;
+  }
+  .price h4{
+    font-size: 25px;
+  }
+}
+/* menu.htmlここまで */
+
+/* calendar.html */
+.calendar-bar{
+  width: 100%:auto;
+  height: 200px;
+  background-color: rgb(0,52,165);
+}
+.calendar-bar h2{
+  font-size: 70px;
+  color: #fff;
+  text-align: center;
+  line-height: 200px;
+}
+.calendar table{
+  text-align: center;
+  font-size: 20px;
+  border-collapse:collapse;
+  color: rgb(0,52,165);
+  margin: 30px auto;
+  border: 2px solid rgb(0,52,165);
+  width: 1500px;
+}
+.calendar caption{
+  font-size: 30px;
+}
+.calendar tr{
+  display: flex;
+}
+.calendar th{
+  background-color: rgb(206,242,255);
+  border: 2px solid rgb(0,52,165);
+  padding: 1em;
+  flex: 1;
+}
+.calendar td{
+  padding: 1em;
+  border: 2px solid rgb(0,52,165);
+  flex: 1;
+}
+@media(max-width:1499px) {
+  .calendar table{
+    width: 700px;
+    margin: 20px auto;
+    font-size: 15px;
+  }
+}
+@media (max-width:699px) {
+  .calendar table{
+    width: 500px;
+    margin: 20px auto;
+    font-size: 8px;
+  }
+}
+/* calendar.htmlここまで */
+
+/* access.html */
+.access-bar{
+  width: 100%:auto;
+  height: 200px;
+  background-color: rgb(0,52,165);
+}
+.access-bar h2{
+  font-size: 70px;
+  color: #fff;
+  text-align: center;
+  line-height: 200px;
+}
+.access table{
+  text-align: center;
+  font-size: 30px;
+  border-collapse:collapse;
+  color: rgb(0,52,165);
+  margin: 30px auto;
+  border: 1px solid #ccc;
+  width: 1000px;
+}
+.access th{
+  border: 1px solid #ccc;
+  padding: 0.5em;
+}
+.access td{
+  padding: 0.5em;
+  border: 1px solid #ccc;
+}
+.access iframe{
+  width: 950px;
+}
+@media(max-width:999px) {
+  .access table{
+    width: 500px;
+    margin: 20px auto;
+    font-size: 20px;
+  }
+  .access iframe{
+    width: 450px;
+  }
+}
+/* access.htmlここまで */
+
+/* sns.html */
+.sns-bar{
+  width: 100%:auto;
+  height: 200px;
+  background-color: rgb(0,52,165);
+}
+.sns-bar h2{
+  font-size: 70px;
+  color: #fff;
+  text-align: center;
+  line-height: 200px;
+}
+.sns .contents{
+  margin: 20px 30%;
+}
+@media (max-width:999px) {
+  .sns .contents{
+    margin: 15px 10%;
+  }
+}
+/* sns.htmlここまで */
