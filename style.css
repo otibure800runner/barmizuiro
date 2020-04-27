@@ -538,7 +538,7 @@ footer .copy{
   color: rgb(0,52,165);
   margin: 30px auto;
   border: 2px solid rgb(0,52,165);
-  width: 1500px;
+  width: 700px;
 }
 .calendar caption{
   font-size: 30px;
@@ -612,7 +612,7 @@ footer .copy{
   color: rgb(0,52,165);
   margin: 30px auto;
   border: 1px solid #ccc;
-  width: 1000px;
+  width: 700px;
 }
 .access th{
   border: 1px solid #ccc;
