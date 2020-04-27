@@ -41,7 +41,7 @@ body{
   font-size: 15vw;
   color: rgb(0,52,165);
 }
-@media (max-width:1499px) {
+@media (max-width:767px) {
   .start p:last-child{
     left: 5vw;
     font-size: 10vw;
@@ -62,7 +62,7 @@ body{
   height: 200px;
   margin: 25px auto;
 }
-@media (max-width:1499px) {
+@media (max-width:767px) {
   .logo{
     height: 120px;
   }
@@ -75,7 +75,7 @@ body{
 #nav{
   display: none;
   margin: 0 auto;
-  width: 80%;
+  width: 60%;
   z-index: 100;
   position: fixed;
   right: 0;
@@ -91,14 +91,14 @@ body{
 #nav li{
   padding: 15px;
   border-bottom: 1px solid #fff;
-  font-size: 8vw;
+  font-size: 5vw;
 }
-@media (min-width:1000px) {
+@media (min-width:768px) {
   #nav{
-    width: 25%;
+    width: 35%;
   }
   #nav li{
-    font-size: 6vh;
+    font-size: 4vh;
   }
 }
 #nav a{
@@ -121,7 +121,7 @@ body{
   cursor: pointer;
   box-shadow: #999 0 0 5px 5px;
 }
-@media (max-width:1499px) {
+@media (max-width:767px) {
   #btn{
     padding: 10px;
   }
@@ -246,7 +246,7 @@ footer span{
 footer .copy{
   font-size: 30px;
 }
-@media (max-width:1499px) {
+@media (max-width:767px) {
   footer{
     height: 120px;
   }
@@ -284,7 +284,7 @@ footer .copy{
   line-height: 2em;
   color: rgb(0,52,165);
 }
-@media (max-width:1499px) {
+@media (max-width:767px) {
   .slider h1{
     font-size: 30px;
   }
@@ -295,7 +295,7 @@ footer .copy{
 .slider img{
   text-align: center;
   margin: 0 auto;
-  width: 50vw;
+  width: 70vw;
 }
 .slider p{
   color: #fff;
@@ -311,7 +311,7 @@ footer .copy{
   display: block;
   background-color: rgba(0,0,0,0.2);
 }
-@media (max-width:1499px) {
+@media (max-width:767px) {
   .slider img{
     margin-left: 0;
     width: 80vw;
@@ -339,7 +339,7 @@ footer .copy{
   color: rgb(0,52,165);
   text-align: center;
 }
-@media (max-width:1499px) {
+@media (max-width:767px) {
   .concept-bar{
     height: 120px;
   }
@@ -457,7 +457,7 @@ footer .copy{
   font-size: 30px;
   padding-left: 20px;
 }
-@media (max-width:1499px) {
+@media (max-width:767px) {
   .menu-bar{
     height: 120px;
   }
@@ -557,7 +557,7 @@ footer .copy{
   border: 2px solid rgb(0,52,165);
   flex: 1;
 }
-@media(max-width:1499px)and (min-width:700px) {
+@media(max-width:767px)and (min-width:700px) {
   .calendar table{
     width: 660px;
     margin: 20px auto;
@@ -625,7 +625,7 @@ footer .copy{
 .access iframe{
   width: 950px;
 }
-@media(max-width:1499px){
+@media(max-width:767px){
   .access-bar{
     height: 120px;
   }
@@ -662,7 +662,7 @@ footer .copy{
 .sns .contents{
   margin: 20px 30%;
 }
-@media(max-width:1499px){
+@media(max-width:767px){
   .sns-bar{
     height: 120px;
   }
