@@ -35,10 +35,10 @@ body{
   position: fixed;
   left: 50%;
   top: 50%;
-  transform: translate(0,-50%);
+  transform: translate(-50%,-50%);
   display: none;
   z-index: 9999;
-  font-size: 15vw;
+  font-size: 8vw;
   color: rgb(0,52,165);
 }
 @media (max-width:767px) {
