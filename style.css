@@ -38,13 +38,12 @@ body{
   transform: translate(-50%,-50%);
   display: none;
   z-index: 9999;
-  font-size: 8vw;
+  font-size: 5vw;
   color: rgb(0,52,165);
 }
 @media (max-width:767px) {
   .start p:last-child{
-    left: 5vw;
-    font-size: 10vw;
+    font-size: 5vw;
   }
 }
 /* 読み込み後のロゴフェードここまで */
